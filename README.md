@@ -1,7 +1,7 @@
 # Automated three-dimensional image registration for longitudinal photoacoustic imaging
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/meetshah1995/pytorch-semseg/blob/master/LICENSE)
 
-## Table of Contents
+## Contents
 - [About](#about)
 - [Context](#context)
 - [Installation](#installation)
