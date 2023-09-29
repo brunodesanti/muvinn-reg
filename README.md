@@ -87,19 +87,19 @@ In the notebooks folder, you will find all the notebooks used for the paper.
 ## Reference
 If you use data, codes or part of codes of this repository please cite:
 
-@article{desanti2023,
-title={Automated three-dimensional image registration for longitudinal photoacoustic imaging},
-author={De Santi, Bruno and Kim, Lucia and Bulthuis, Rianne F. G. and Lucka, Felix and Manohar, Srirang},
-journal={Journal of Biomedical Optics}
-volume = {},
-journal = {Journal of Biomedical Optics},
-number = {},
-publisher = {SPIE},
-pages = {},
-year={2023},
-doi = {},
-URL = {}
-}
+    @article{desanti2023,
+    title={Automated three-dimensional image registration for longitudinal photoacoustic imaging},
+    author={De Santi, Bruno and Kim, Lucia and Bulthuis, Rianne F. G. and Lucka, Felix and Manohar, Srirang},
+    journal={Journal of Biomedical Optics}
+    volume = {},
+    journal = {Journal of Biomedical Optics},
+    number = {},
+    publisher = {SPIE},
+    pages = {},
+    year={2023},
+    doi = {},
+    URL = {}
+    }
 
 
 ## Acknowledgements
