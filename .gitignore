@@ -4,7 +4,6 @@ out/
 **/__pycache__/
 **/.ipynb_checkpoints/
 notebooks/evaluation
-notebooks/experiments/*
 notebooks/mevislab
 notebooks/data
 
