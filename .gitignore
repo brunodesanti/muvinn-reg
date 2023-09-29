@@ -192,7 +192,6 @@ cython_debug/
 notebooks/data/
 notebooks/evaluation/
 notebooks/experiments/benchmarking/demons/results/
-notebooks/experiments/benchmarking/elastix/parameters/
 notebooks/experiments/benchmarking/elastix/results/
 notebooks/experiments/benchmarking/wolterink/results/
 notebooks/experiments/different cup/results/
