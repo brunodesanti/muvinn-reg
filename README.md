@@ -5,6 +5,7 @@
 - [Context](#context)
 - [Installation](#installation)
 - [Screenshots](#screenshots)
+- [Data](#data)
 - [Repository](#repository)
 - [Reference](#reference)
 - [Acknowledgements](#acknowledgements)
@@ -21,27 +22,27 @@ Photoacoustic tomography (PAT) has great potential in monitoring disease progres
 ![Algorithm description](https://github.com/brunodesanti/muvinn-reg/tree/master/description.png?raw=true)
 
 ## Installation
+First of all, clone the repository using git:
 
-It is recommended to install a virtual envinroment on Anaconda:
-```console
-conda create -n muvinn-reg python=3.8
-conda activate muvinn-reg
-```
-
-Then clone the repository:
 ```console
 git clone git@github.com:brunodesanti/muvinn-reg.git
 ```
+Enter the local repository:
 
-Install all the required packages listed in the file *requirements.txt*
+```console
+cd muvinn-reg
+```
+Create an Anaconda virtual environment using the .yml file and activate it:
+```console
+conda env create -f muvinn-reg-env.yml
+conda activate muvinn-reg
+```
 
-Try to run the notebook ```apply_muvinn.ipynb``` which will apply MUVINN-reg to co-register a pair of PAT repeated scans.
+Run the notebook ```apply_muvinn.ipynb``` to apply MUVINN-reg to co-register a pair of PAT repeated scans.
 
-In case of problems with the installation, please report an issue!
+In case of problems with the installation, please contact me!
 
-## Repository
-
-### Data
+## Data
 Data can be found at the following link:
 [datalink](https://data.4tu.nl/)
 
@@ -56,6 +57,8 @@ Data is stored as Python dictionaries with the following fields:
     - `dict["metadata"]["id_scan"]`: ID of the imaging scan
     - `dict["metadata"]["wl"]`: illumination wavelength
 
+## Repository
+
 ### Source codes
 Source codes are included in the following directories:
 - ```models```:  scripts for training models 
@@ -64,15 +67,13 @@ Source codes are included in the following directories:
 - ```utils```:  scripts for processing, visualizing and evaluating
 
 ### Notebooks
-In the notebooks directory, you will find all the notebooks used for the paper.
-
+In ```/notebooks``` you will find all the notebooks used for the paper
 - ```notebooks/experiments```: contains notebooks to run all the experiments shown in the paper
 - ```notebooks/mevislab```: contains notebook to export data for MeVisLab and MeVisLab projects to visualize and annotate landmarks on PAT volumes
 - ```notebooks/evaluation```: contains notebooks to analyze performance metrics and to show registration process
 
 ## Reference
 If you use data, codes or part of codes in this repository please cite:
-
     @article{desanti2023,
     title={Automated three-dimensional image registration for longitudinal photoacoustic imaging},
     author={De Santi, Bruno and Kim, Lucia and Bulthuis, Rianne F. G. and Lucka, Felix and Manohar, Srirang},
@@ -87,14 +88,13 @@ If you use data, codes or part of codes in this repository please cite:
     URL = {}
     }
 
-
 ## Acknowledgements
 This work was supported by:
 - REACT-EU project “Foto-akoestische mammografie naar de kliniek met de PAM3+”
 - 4TU Precision Medicine program (4tu.nl/precision-medicine)
 - Pioneers in Healthcare Innovation (PIHC) fund 2020 for project “Photoacoustic breast tomography: Towards monitoring of neoadjuvant chemotherapy response.”
 
-Authors are grateful to Dr. Jelmer Wolterink for his help during the development of the algorithm. Part of the codes in this repository were adapted from his GitHub repository: https://github.com/MIAGroupUT/IDIR. 
+Authors are grateful to Dr. Jelmer Wolterink for his help during the development of the algorithm. Part of the codes in this repository were adapted from his GitHub repository: [idir](https://github.com/MIAGroupUT/IDIR)  
 
 ## License
 
