@@ -21,7 +21,7 @@ Photoacoustic tomography (PAT) has great potential in monitoring disease progres
 
 ![Algorithm description](https://github.com/brunodesanti/muvinn-reg/blob/main/description.png?raw=true)
 
-<video src='https://youtu.be/Siw4ru39h1U' width=180/> | <video src='https://youtu.be/Siw4ru39h1U' width=180/>
+<video src="https://youtu.be/ztyOAqt72UA"></video>
 
 ## Installation
 
