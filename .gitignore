@@ -1,10 +1,7 @@
-
 out/
 .idea/
 **/__pycache__/
 **/.ipynb_checkpoints/
-notebooks/evaluation
-notebooks/data
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -82,9 +79,6 @@ docs/_build/
 # PyBuilder
 .pybuilder/
 target/
-
-# PyCharm
-.idea/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -190,10 +184,11 @@ cython_debug/
 /notebooks/mevislab/15_01.nii.gz
 
 notebooks/data/
-notebooks/evaluation/
 notebooks/experiments/benchmarking/demons/results/
 notebooks/experiments/benchmarking/elastix/results/
 notebooks/experiments/benchmarking/wolterink/results/
 notebooks/experiments/different cup/results/
 notebooks/experiments/different wavelength/results/
 notebooks/experiments/same wavelength/results/
+/notebooks/evaluation/depth_map.npy
+/notebooks/evaluation/verbose/
