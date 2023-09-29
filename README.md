@@ -6,19 +6,19 @@
 - [Installation](#installation)
 - [Screenshots](#screenshots)
 - [Repository](#repository)
-- [Reference](#license)
+- [Reference](#reference)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 ## About
 
-This repository includes data and codes used for the paper "Automated three-dimensional image registration for longitudinal photoacoustic imaging", *Journal of Biomedical Optics*, **Special Issue Pioneer in Biomedical Optics, Lihong V. Wang, 2023**
+This repository includes codes used for the paper "Automated three-dimensional image registration for longitudinal photoacoustic imaging", *Journal of Biomedical Optics*, **Special Issue Pioneer in Biomedical Optics, Lihong V. Wang, 2023**
 
 ## Context
 
 Photoacoustic tomography (PAT) has great potential in monitoring disease progression and treatment response in breast cancer. However, due to variations in breast repositioning there is a chance of geometric misalignment between images. The proposed framework involves the use of a coordinate-based neural network to represent the displacement field between pairs of PAT volumetric images. A loss function based on normalized cross correlation and Frangi vesselness feature extraction at multiple scales was implemented. We refer to our image registration framework as MUVINN-reg, which stands for Multiscale Vesselness-based Image registration using Neural Networks.
 
-![Algorithm description](https://github.com/brunodesanti/test/blob/main/description.png?raw=true)
+![Algorithm description](https://github.com/brunodesanti/muvinn-reg/tree/master/description.png?raw=true)
 
 ## Installation
 
@@ -42,7 +42,11 @@ In case of problems with the installation, please report an issue!
 ## Repository
 
 ### Data
-Data is stored in ```notebooks/data``` as Python dictionaries with the following fields:
+Data can be found at the following link:
+[datalink](https://data.4tu.nl/)
+
+Data is stored as Python dictionaries with the following fields:
+
 - `dict["rec"]`: reconstruction as numpy array
 - `dict["cup_size"]`: size of the cup
 - `dict["cup_mask"]`: binary mask of the cup
@@ -52,15 +56,15 @@ Data is stored in ```notebooks/data``` as Python dictionaries with the following
     - `dict["metadata"]["id_scan"]`: ID of the imaging scan
     - `dict["metadata"]["wl"]`: illumination wavelength
 
-### Source Python codes
-Python codes are included in the following folders:
+### Source codes
+Source codes are included in the following directories:
 - ```models```:  scripts for training models 
 - ```networks```: scripts for initializing networks (SIREN and ReLU)
 - ```objectives```:  scripts for interpolation, normalized cross correlation and regularizers
 - ```utils```:  scripts for processing, visualizing and evaluating
 
 ### Notebooks
-In the notebooks folder, you will find all the notebooks used for the paper.
+In the notebooks directory, you will find all the notebooks used for the paper.
 
 - ```notebooks/experiments```: contains notebooks to run all the experiments shown in the paper
 - ```notebooks/mevislab```: contains notebook to export data for MeVisLab and MeVisLab projects to visualize and annotate landmarks on PAT volumes
