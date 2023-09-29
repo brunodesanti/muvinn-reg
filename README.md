@@ -18,7 +18,7 @@ This repository includes data and codes used for the paper "Automated three-dime
 
 Photoacoustic tomography (PAT) has great potential in monitoring disease progression and treatment response in breast cancer. However, due to variations in breast repositioning there is a chance of geometric misalignment between images. The proposed framework involves the use of a coordinate-based neural network to represent the displacement field between pairs of PAT volumetric images. A loss function based on normalized cross correlation and Frangi vesselness feature extraction at multiple scales was implemented. We refer to our image registration framework as MUVINN-reg, which stands for Multiscale Vesselness-based Image registration using Neural Networks.
 
-![Algorithm description](https://github.com/brunodesanti/test/blob/main/description.png?raw=true)
+![Algorithm description](https://github.com/brunodesanti/muvinn-reg/main/description.png?raw=true)
 
 ## Installation
 
