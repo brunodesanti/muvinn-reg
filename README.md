@@ -38,7 +38,19 @@ Activate the environment:
 conda activate muvinn-reg-env
 ```
 
-Run the notebook ```apply_muvinn.ipynb``` which will apply MUVINN-reg to co-register a pair of PAT repeated scans.
+If you want to run an example of MUVINN-reg co-registration, run ```apply_muvinn.ipynb``` 
+
+But first remember to install the Ipython kernel to run notebooks on the muvinn-reg environment:
+```console
+python -m ipykernel install --user --name muvinn-reg-eng --display-name "muvinn-reg-env"
+```
+Run Jupyter Lab (for example):
+```console
+jupyter lab
+```
+
+Select muvinn-reg-env as kernel and run ```apply_muvinn.ipynb```.
+
 
 In case of problems with the installation, please contact me!
 
