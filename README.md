@@ -21,23 +21,26 @@ Photoacoustic tomography (PAT) has great potential in monitoring disease progres
 ![Algorithm description](https://github.com/brunodesanti/muvinn-reg/blob/main/description.png?raw=true)
 
 ## Installation
-
-It is recommended to install a virtual envinroment on Anaconda:
+First of all, clone the repository:
 ```console
-conda create -n muvinn-reg python=3.8
-conda activate muvinn-reg
+git clone https://github.com/brunodesanti/muvinn-reg.git
+```
+Open Anaconda terminal and navigate into the local repository:
+```console
+cd muvinn-reg
+```
+Install Anaconda environment specified in the .yml environment file:
+```console
+conda env create -f environment.yml
+```
+Activate the environment:
+```console
+conda activate muvinn-reg-env
 ```
 
-Then clone the repository:
-```console
-git clone git@github.com:brunodesanti/muvinn-reg.git
-```
+Run the notebook ```apply_muvinn.ipynb``` which will apply MUVINN-reg to co-register a pair of PAT repeated scans.
 
-Install all the required packages listed in the file *requirements.txt*
-
-Try to run the notebook ```apply_muvinn.ipynb``` which will apply MUVINN-reg to co-register a pair of PAT repeated scans.
-
-In case of problems with the installation, please report an issue!
+In case of problems with the installation, please contact me!
 
 ## Repository
 
