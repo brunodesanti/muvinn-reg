@@ -4,7 +4,7 @@
 - [About](#about)
 - [Context](#context)
 - [Installation](#installation)
-- [Screenshots](#screenshots)
+- [Data](#data)
 - [Repository](#repository)
 - [Reference](#reference)
 - [Acknowledgements](#acknowledgements)
@@ -12,7 +12,7 @@
 
 ## About
 
-This repository includes data and codes used for the paper "Automated three-dimensional image registration for longitudinal photoacoustic imaging", *Journal of Biomedical Optics*, **Special Issue Pioneer in Biomedical Optics, Lihong V. Wang, 2023**
+This repository includes codes and notebooks used for the paper "Automated three-dimensional image registration for longitudinal photoacoustic imaging", *Journal of Biomedical Optics*, **Special Issue Pioneer in Biomedical Optics, Lihong V. Wang, 2023**
 
 ## Context
 
@@ -21,6 +21,7 @@ Photoacoustic tomography (PAT) has great potential in monitoring disease progres
 ![Algorithm description](https://github.com/brunodesanti/muvinn-reg/blob/main/description.png?raw=true)
 
 ## Installation
+
 First of all, clone the repository:
 ```console
 git clone https://github.com/brunodesanti/muvinn-reg.git
@@ -38,7 +39,7 @@ Activate the environment:
 conda activate muvinn-reg-env
 ```
 
-If you want to run an example of MUVINN-reg co-registration, run ```apply_muvinn.ipynb``` 
+If you want to run an example of MUVINN-reg co-registration, run ```apply_muvinn.ipynb```
 
 But first remember to install the Ipython kernel to run notebooks on the muvinn-reg environment:
 ```console
@@ -51,13 +52,13 @@ jupyter lab
 
 Select muvinn-reg-env as kernel and run ```apply_muvinn.ipynb```.
 
-
 In case of problems with the installation, please contact me!
 
-## Repository
+## Data
+Data is stored in an external online storage: 
+[Data link](https://data.4tu.nl/)
 
-### Data
-Data is stored in ```notebooks/data``` as Python dictionaries with the following fields:
+Data is organized as Python dictionaries with the following fields:
 - `dict["rec"]`: reconstruction as numpy array
 - `dict["cup_size"]`: size of the cup
 - `dict["cup_mask"]`: binary mask of the cup
@@ -67,8 +68,10 @@ Data is stored in ```notebooks/data``` as Python dictionaries with the following
     - `dict["metadata"]["id_scan"]`: ID of the imaging scan
     - `dict["metadata"]["wl"]`: illumination wavelength
 
-### Source Python codes
-Python codes are included in the following folders:
+## Repository
+
+### Source codes
+Source codes are included in the following folders:
 - ```models```:  scripts for training models 
 - ```networks```: scripts for initializing networks (SIREN and ReLU)
 - ```objectives```:  scripts for interpolation, normalized cross correlation and regularizers
@@ -76,13 +79,13 @@ Python codes are included in the following folders:
 
 ### Notebooks
 In the notebooks folder, you will find all the notebooks used for the paper.
-
+- ```notebooks/data```: contains notebooks to prepare dataset
+- ```notebooks/evaluation```: contains notebooks to analyze performance metrics and to show registration process
 - ```notebooks/experiments```: contains notebooks to run all the experiments shown in the paper
 - ```notebooks/mevislab```: contains notebook to export data for MeVisLab and MeVisLab projects to visualize and annotate landmarks on PAT volumes
-- ```notebooks/evaluation```: contains notebooks to analyze performance metrics and to show registration process
 
 ## Reference
-If you use data, codes or part of codes in this repository please cite:
+If you use data, codes or part of codes of this repository please cite:
 
 @article{desanti2023,
 title={Automated three-dimensional image registration for longitudinal photoacoustic imaging},
@@ -97,7 +100,6 @@ year={2023},
 doi = {},
 URL = {}
 }
-
 
 ## Acknowledgements
 This work was supported by:
