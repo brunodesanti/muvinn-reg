@@ -98,7 +98,6 @@ If you use data, codes or part of codes of this repository please cite:
     author={De Santi, Bruno and Kim, Lucia and Bulthuis, Rianne F. G. and Lucka, Felix and Manohar, Srirang},
     journal={Journal of Biomedical Optics}
     volume = {},
-    journal = {Journal of Biomedical Optics},
     number = {},
     publisher = {SPIE},
     pages = {},
