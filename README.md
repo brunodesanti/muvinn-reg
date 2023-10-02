@@ -49,7 +49,7 @@ If you want to run an example of MUVINN-reg co-registration, run ```apply_muvinn
 
 But first remember to install the Ipython kernel to run notebooks on the muvinn-reg environment:
 ```console
-python -m ipykernel install --user --name muvinn-reg-eng --display-name "muvinn-reg-env"
+python -m ipykernel install --user --name muvinn-reg-env --display-name "muvinn-reg-env"
 ```
 Run Jupyter Lab (for example):
 ```console
