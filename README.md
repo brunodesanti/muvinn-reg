@@ -21,6 +21,8 @@ Photoacoustic tomography (PAT) has great potential in monitoring disease progres
 
 ![Algorithm description](https://github.com/brunodesanti/muvinn-reg/blob/main/description.png?raw=true)
 
+<video src="https://youtu.be/ztyOAqt72UA?si=nmm-jmKwfmRnfaqG"></video>
+
 ## Installation
 
 First of all, clone the repository:
@@ -56,7 +58,7 @@ Select muvinn-reg-env as kernel and run ```apply_muvinn.ipynb```.
 In case of problems with the installation, please contact me!
 
 ## Data
-Data will be stored in an external online storage: 
+Data is stored in an external online storage: 
 [Data link](https://data.4tu.nl/)
 
 Data is organized as Python dictionaries with the following fields:
