@@ -286,7 +286,6 @@ class ImplicitRegistrator:
             
     def trainingIteration(self, epoch):
         """Perform one iteration of training."""
-        update_flag = 0
         # Reset the gradient
         self.network.train()
 
@@ -338,7 +337,7 @@ class ImplicitRegistrator:
         self.loss_list[epoch] = loss.detach().cpu().numpy()
 
         # Print Logs
-        if (epoch % self.log_interval ==  0 or epoch ==  self.epochs - 1 or update_flag ==  1):
+        if (epoch % self.log_interval ==  0 or epoch ==  self.epochs - 1):
             if self.verbose:
                 with torch.no_grad():  
                     # Apply INR transformation to the moving image (using batches of coordinates to avoid out of GPU memory)
