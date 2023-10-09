@@ -247,13 +247,6 @@ class ImplicitRegistrator:
         self.gpu = True
         self.network.cuda()
         
-    def gradient(self, input_coords, output, grad_outputs = None):
-        """Compute the gradient of the output wrt the input."""
-
-        grad_outputs = torch.ones_like(output)
-        grad = torch.autograd.grad(output, [input_coords], grad_outputs = grad_outputs, create_graph = True)[0]
-        return grad
-        
     def makeCoordinateTensor(self, dims = (28, 28, 28), gpu = True, mask = None):
         """Make a coordinate tensor."""
 
