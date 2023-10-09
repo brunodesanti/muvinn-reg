@@ -56,7 +56,7 @@ Select muvinn-reg-env as kernel and run ```apply_muvinn.ipynb```.
 In case of problems with the installation, please contact me!
 
 ## Data
-Data is stored in an external online storage: 
+Data will be stored in an external online storage: 
 [Data link](https://data.4tu.nl/)
 
 Data is organized as Python dictionaries with the following fields:
