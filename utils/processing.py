@@ -218,9 +218,4 @@ def processing_vis(rec, frangi_options = None, aim_options = None, gpu = 'cuda')
 def segment_vessels(rec, depth_map, ti = 0.06, tf = 0.01, tau = 100):
     thresh_map = tf + (ti - tf) * np.exp(-tau * depth_map)
     vessel_seg = rec > thresh_map
-
-    vessel_seg_sitk = sitk.GetImageFromArray(vessel_seg.astype(np.uint8))
-    vessel_seg_clean_sitk = sitk.BinaryOpeningByReconstruction(vessel_seg_sitk, [1, 1, 1])
-    vessel_seg_clean_sitk = sitk.BinaryClosingByReconstruction(vessel_seg_clean_sitk, [1, 1, 1])
-
-    return sitk.GetArrayFromImage(vessel_seg_clean_sitk)
+    return vessel_seg

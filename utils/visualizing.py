@@ -13,7 +13,6 @@ License: [Specify the license, e.g., MIT, GPL, etc.]
 
 import numpy as np
 import matplotlib.pyplot as plt
-import SimpleITK as sitk
 from matplotlib.colors import LinearSegmentedColormap
 
 # Compute RGB overlays of two images 
