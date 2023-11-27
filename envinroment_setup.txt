@@ -1,0 +1,8 @@
+conda create -n muvinn-reg-env
+conda activate muvinn-reg-env
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install -c conda-forge monai=1.2.0
+conda install matplotlib
+conda install -c conda-forge tqdm
+conda install -c simpleitk simpleitk
+conda install -c anaconda scikit-image
