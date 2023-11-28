@@ -16,7 +16,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import monai
-import SimpleITK as sitk
 
 # Crop image according to bounding box
 def crop_rec(rec, image_crop_region):

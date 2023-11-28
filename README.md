@@ -24,40 +24,27 @@ Photoacoustic tomography (PAT) has great potential in monitoring disease progres
 <video src="https://youtu.be/ztyOAqt72UA?si=nmm-jmKwfmRnfaqG"></video>
 
 ## Installation
+First of all, make sure your environments is compatible with the requirements listed in the ```requirements.txt```.
 
-First of all, clone the repository:
+If not, we recommend to create a new envinronment from scratch, for example, using Anaconda:
 ```console
-git clone https://github.com/brunodesanti/muvinn-reg.git
-```
-Open Anaconda terminal and navigate into the local repository:
-```console
-cd muvinn-reg
-```
-Install Anaconda environment specified in the .yml environment file:
-```console
-conda env create -f environment.yml
-```
-Activate the environment:
-```console
+conda create -n muvinn-reg-env python=3.8.0 ipython
+
 conda activate muvinn-reg-env
+
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+
+conda install -c conda-forge monai=1.2.0
+
+conda install matplotlib
+
+conda install -c conda-forge tqdm
+
+conda install -c anaconda scikit-image
 ```
-
-If you want to run an example of MUVINN-reg co-registration, run ```apply_muvinn.ipynb```
-
-But first remember to install the Ipython kernel to run notebooks on the muvinn-reg environment:
-```console
-python -m ipykernel install --user --name muvinn-reg-eng --display-name "muvinn-reg-env"
-```
-Run Jupyter Lab (for example):
-```console
-jupyter lab
-```
-
-Select muvinn-reg-env as kernel and run ```apply_muvinn.ipynb```.
-
-In case of problems with the installation, please contact me!
 
 ## Data
+
 Data is stored in an external online storage: 
 [Data link](https://data.4tu.nl/)
 
@@ -71,7 +58,22 @@ Data is organized as Python dictionaries with the following fields:
     - `dict["metadata"]["id_scan"]`: ID of the imaging scan
     - `dict["metadata"]["wl"]`: illumination wavelength
 
+For data sharing regulations, we can not share PAM3 data on this repository directly. It is recommended to download PAM3 data from [Data link](https://data.4tu.nl/).
+
 ## Repository
+
+If you want to run an example of MUVINN-reg co-registration, run ```apply_muvinn.ipynb``` 
+
+But first remember to install the Ipython kernel to run notebooks on the muvinn-reg environment:
+```console
+python -m ipykernel install --user --name muvinn-reg-env --display-name "muvinn-reg-env"
+```
+
+Select muvinn-reg-env as kernel on your notebook.
+
+Change the fixed and moving image paths in the notebook and run.
+
+In case of errors/problems, please contact me!
 
 ### Source codes
 Source codes are included in the following folders:

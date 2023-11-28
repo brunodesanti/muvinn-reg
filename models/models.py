@@ -12,7 +12,7 @@ GitHub: https://github.com/MIAGroupUT/IDIR
 Paper/Project Title: Automated three-dimensional image registration for longitudinal photoacoustic imaging (De Santi et al. 2023, JBO)
 Paper/Project URL: https://github.com/brunodesanti/muvinn-reg
 
-License: [Specify the license, e.g., MIT, GPL, etc.]
+License: MIT
 """
 
 import torch
