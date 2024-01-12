@@ -21,10 +21,7 @@ Photoacoustic tomography (PAT) has great potential in monitoring disease progres
 
 ![Algorithm description](https://github.com/brunodesanti/muvinn-reg/blob/main/description.png?raw=true)
 
-
-
 https://github.com/brunodesanti/muvinn-reg/assets/91621685/1aab31e5-1e0d-40a0-b4ae-dc05e845123f
-
 
 ## Installation
 First of all, make sure your environments is compatible with the requirements listed in the ```requirements.txt```.
@@ -48,8 +45,7 @@ conda install -c anaconda scikit-image
 
 ## Data
 
-Data is stored in an external online storage: 
-[Data link](https://data.4tu.nl/)
+For data sharing regulations, PAM3 data will be shared in an external repository. This repository will be available in few weeks.
 
 Data is organized as Python dictionaries with the following fields:
 - `dict["rec"]`: reconstruction as numpy array
@@ -61,7 +57,6 @@ Data is organized as Python dictionaries with the following fields:
     - `dict["metadata"]["id_scan"]`: ID of the imaging scan
     - `dict["metadata"]["wl"]`: illumination wavelength
 
-For data sharing regulations, we can not share PAM3 data on this repository directly. It is recommended to download PAM3 data from [Data link](https://data.4tu.nl/).
 
 ## Repository
 
