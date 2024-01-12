@@ -327,7 +327,6 @@ class ImplicitRegistrator:
             self.curr_moving_image = ScaleIntensity(processing.frangi_aim(self.moving_image, self.frangi_options, self.aim_options, gpu = 'cuda'))
             self.curr_fixed_image = ScaleIntensity(processing.frangi_aim(self.fixed_image, self.frangi_options, self.aim_options, gpu = 'cuda'))
             coordinate_tensor_loc = [torch.linspace(-self.ncc_widths[self.frangi_iter], self.ncc_widths[self.frangi_iter], 5) for i in range(3)]
-            coordinate_tensor_loc = [torch.linspace(-self.ncc_widths[self.frangi_iter], self.ncc_widths[self.frangi_iter], 5) for i in range(3)]
             coordinate_tensor_loc = torch.meshgrid(*coordinate_tensor_loc)
             coordinate_tensor_loc = torch.stack(coordinate_tensor_loc, dim = 3)
             coordinate_tensor_loc = coordinate_tensor_loc.view([5**3, 3])
