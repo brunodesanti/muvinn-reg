@@ -13,7 +13,7 @@
 
 ## About
 
-This repository includes codes and notebooks used for the paper "Automated three-dimensional image registration for longitudinal photoacoustic imaging", *Journal of Biomedical Optics*, **Special Issue Pioneer in Biomedical Optics, Lihong V. Wang, 2023**
+This repository includes codes and notebooks used for the paper "Automated three-dimensional image registration for longitudinal photoacoustic imaging", *Journal of Biomedical Optics*, **Special Issue Pioneer in Biomedical Optics, Lihong V. Wang, 2024**
 
 ## Context
 
@@ -90,19 +90,20 @@ In the notebooks folder, you will find all the notebooks used for the paper.
 ## Reference
 If you use data, codes or part of codes of this repository please cite:
 
-    @article{desanti2023,
-    title={Automated three-dimensional image registration for longitudinal photoacoustic imaging},
-    author={De Santi, Bruno and Kim, Lucia and Bulthuis, Rianne F. G. and Lucka, Felix and Manohar, Srirang},
-    journal={Journal of Biomedical Optics}
-    volume = {},
-    journal = {Journal of Biomedical Optics},
-    number = {},
-    publisher = {SPIE},
-    pages = {},
-    year={2023},
-    doi = {},
-    URL = {}
-    }
+@article{desanti2024,
+author = {Bruno De Santi and Lucia Kim and Rianne F. G. Bulthuis and Felix Lucka and Srirang Manohar},
+title = {{Automated three-dimensional image registration for longitudinal photoacoustic imaging}},
+volume = {29},
+journal = {Journal of Biomedical Optics},
+number = {S1},
+publisher = {SPIE},
+pages = {S11515},
+keywords = {photoacoustic imaging, breast imaging, longitudinal imaging, image registration, coordinate based neural network, Image registration, Breast, Acquisition tracking and pointing, 3D image processing, Deformation, Biological imaging, Neural networks, Education and training, Imaging systems, Tunable filters},
+year = {2024},
+doi = {10.1117/1.JBO.29.S1.S11515},
+URL = {https://doi.org/10.1117/1.JBO.29.S1.S11515}
+}
+
 
 
 ## Acknowledgements
