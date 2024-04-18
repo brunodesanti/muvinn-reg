@@ -45,7 +45,7 @@ conda install -c anaconda scikit-image
 
 ## Data
 
-For data sharing regulations, PAM3 data will be shared in an external repository. This repository will be available in few weeks.
+For data sharing regulations, PAM3 data will be shared in an external repository. This repository will be available as soon as possible.
 
 Data is organized as Python dictionaries with the following fields:
 - `dict["rec"]`: reconstruction as numpy array
